@@ -41,4 +41,5 @@ if __name__ == '__main__':
     model.load_state_dict(torch.load('./Model_saved/model.pth'))
     model.eval()
     test = test(model,testloader,BATCH_SIZE)
+    print("Done.")
     
